@@ -1,3 +1,15 @@
+---
+title: CC-Switch 全平台下载、安装与使用全指南（Windows/macOS/Linux）
+date: 2026-05-09 22:50:00
+tags:
+  - 人工智能
+  - CC-Switch
+  - AI编程工具
+  - 全平台工具
+categories:
+  - 工具教程
+---
+
 # CC\-Switch 全平台下载、安装与使用全指南（Windows/macOS/Linux）
 
 文章标签： \#人工智能 \#CC\-Switch \#AI编程工具 \#全平台工具 \#配置管理器 \#GitHub \#开发效率
