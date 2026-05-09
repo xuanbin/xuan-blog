@@ -35,7 +35,7 @@ CC\-Switch 作为一款**跨平台开源桌面配置管理器**，基于 Rust \+
 |核心功能|供应商一键切换、系统托盘快切、MCP 统一管理、Skills 一键安装、Prompts 管理、API 测速、配置备份/恢复|
 |存储方式|本地 SQLite 数据库，采用原子写入机制，防止配置文件损坏|
 |推荐版本|v3\.13\.0 及以上（修复多项兼容问题，运行更稳定）|
-|下载|：[https://pan.quark.cn/s/ce7ed4e4acd5](https://pan.quark.cn/s/ce7ed4e4acd5)|
+
 
 ## 二、全平台安装包说明
 
