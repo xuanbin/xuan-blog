@@ -113,3 +113,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+  
+# 站点地图 SEO
+sitemap:
+  path: sitemap.xml
