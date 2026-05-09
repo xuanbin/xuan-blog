@@ -3,17 +3,28 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+# 网站标题
+title: 小轩的技术博客
+# 网站副标题
+subtitle: 记录学习 | 分享工具 | 高效编程
+# 网站描述
+description: 专注 AI 工具、开发教程、软件配置、编程技巧分享
+# 网站关键词
 keywords:
-author: John Doe
-language: en
-timezone: ''
+  - AI工具
+  - 编程教程
+  - 开发效率
+  - 技术笔记
+# 博主名字
+author: 小轩
+# 网站语言 改成中文
+language: zh-CN
+# 时区 必须填 Asia/Shanghai
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://xuan-blog.vercel.app
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

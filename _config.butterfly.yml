@@ -1,0 +1,15 @@
+# 侧边栏
+aside:
+  enable: true
+
+  # 公告设置
+  card_announcement:
+    enable: true
+    content: "欢迎来到我的博客！✨ 这里分享技术笔记与工具教程。"
+
+# 菜单设置
+menu:
+  首页: /
+  标签: /tags/
+  分类: /categories/
+  关于: /about/
