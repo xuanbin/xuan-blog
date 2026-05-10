@@ -21,6 +21,9 @@ avatar:
   img: /img/avatar.png   # 对应 source/img/avatar.png
   effect: false           # true= hover 旋转；false=不转
 
+# 百度统计
+baidu_analytics: b39a3c73c001feeaf622445f9750d3cb
+
 comments:
   use: giscus
   text: true
