@@ -13,3 +13,8 @@ menu:
   标签: /tags/
   分类: /categories/
   关于: /about/
+
+# Avatar (头像)
+avatar:
+  img: /img/avatar.png   # 对应 source/img/avatar.png
+  effect: false           # true= hover 旋转；false=不转
