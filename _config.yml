@@ -117,3 +117,5 @@ deploy:
 # 站点地图 SEO
 sitemap:
   path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
