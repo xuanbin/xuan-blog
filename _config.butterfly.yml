@@ -18,3 +18,22 @@ menu:
 avatar:
   img: /img/avatar.png   # 对应 source/img/avatar.png
   effect: false           # true= hover 旋转；false=不转
+
+comments:
+  use: giscus
+  text: true
+  lazyload: false
+
+giscus:
+  repo: xuanbin/xuan-blog
+  repo_id: R_kgDOSYzXJA
+  category: Announcements
+  category_id: DIC_kwDOSYzXJM4C8s2C
+  mapping: pathname
+  strict: 0
+  reactions_enabled: 1
+  emit_metadata: 0
+  input_position: bottom
+  theme: preferred_color_scheme
+  lang: zh-CN
+  crossorigin: anonymous
