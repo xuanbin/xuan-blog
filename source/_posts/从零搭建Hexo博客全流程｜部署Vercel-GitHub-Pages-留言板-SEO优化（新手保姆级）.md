@@ -10,7 +10,7 @@ tags:
   - 教程
 categories:
   - 技术教程
-cover: /img/hexo-blog-cover.jpg
+#cover: /img/hexo-blog-cover.jpg
 description: 从零开始搭建个人博客的完整教程,包含Hexo安装、主题配置、Vercel和GitHub Pages双平台部署、Giscus留言板集成、SEO优化等全流程指南
 ---
 
