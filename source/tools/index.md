@@ -1,14 +1,74 @@
----
-title: 工具箱
+﻿---
+title: 开发者工具箱 - 在线JSON/URL/Base64/MD5/正则/时间戳工具
 date: 2026-05-11 15:00:00
-updated: 2026-05-11 15:00:00
+updated: 2026-05-11 18:20:00
 top_img: false
 comments: false
 toc:
   enable: true
   position: left
 aside: true
+keywords:
+  - 开发者工具
+  - JSON格式化
+  - URL编码解码
+  - Base64
+  - MD5加密
+  - 正则表达式测试
+  - 时间戳转换
+  - 进制转换
+  - 随机密码生成
+  - UUID生成
+  - 文本对比
+  - 字数统计
+  - 单位换算
+  - Unix权限计算
+  - 在线工具
+description: 免费在线开发者工具箱，支持JSON格式化/校验、URL编解码、Base64、MD5、正则测试、时间戳转换、进制转换、随机密码、UUID生成、文本对比、字数统计等，数据全程本地处理不离开浏览器。
+cover: false
+seo:
+  ogTitle: 开发者工具箱 - JSON/正则/密码/时间戳在线工具
+  ogDescription: 15款开发者必备在线工具，JSON美化压缩、URL编解码、MD5、正则测试、时间戳转换、进制转换、密码生成、UUID、文本对比、字数统计，单位换算，Unix权限计算。完全免费，数据不离开浏览器。
+  ogImage: https://xuan-blog.com/images/og-tools.png
+  canonicalUrl: https://xuan-blog.com/tools/
 ---
+
+<!-- SEO 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "开发者工具箱",
+  "alternateName": "DevToolbox",
+  "url": "https://xuan-blog.com/tools/",
+  "description": "免费在线开发者工具集合，支持JSON格式化、URL编解码、Base64、MD5、正则测试、时间戳转换、进制转换、随机密码生成、UUID生成、文本对比、字数统计、单位换算、Unix权限计算等15款工具。",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CNY"
+  },
+  "keywords": "JSON格式化,URL编码,Base64,MD5,正则表达式,时间戳转换,进制转换,随机密码,UUID生成,文本对比,字数统计",
+  "featureList": [
+    "JSON 格式化、美化、压缩、校验",
+    "URL Encode/Decode 编解码",
+    "Base64 编码解码",
+    "MD5 哈希计算",
+    "Unix 时间戳 ↔ 日期时间双向转换",
+    "二进制/八进制/十进制/十六进制互转",
+    "自定义长度和字符类型的随机密码生成",
+    "批量生成 UUID v4",
+    "正则表达式实时测试",
+    "两段文本逐行对比",
+    "字符数、单词数、行数、中文字数统计",
+    "长度、重量、温度单位换算",
+    "Unix 文件权限数字↔符号转换"
+  ]
+}
+</script>
+
+{% raw %}
 
 {% raw %}
 <style>
@@ -278,102 +338,115 @@ input[type="checkbox"].tb-cb { accent-color: #3b82f6; width: 16px; height: 16px;
     </div>
 
     <!-- 编码工具 -->
-    <div class="tb-section">
-      <div class="tb-section-title"><span class="tb-sec-icon">🔐</span> 编码工具</div>
+    <div class="tb-section" aria-labelledby="sec-encode">
+      <h2 class="tb-section-title" id="sec-encode"><span class="tb-sec-icon">🔐</span> 编码工具</h2>
       <div class="tb-grid tb-cat-encode">
-        <div class="tb-card" onclick="tbShowTool('encode')">
-          <div class="tb-card-header"><div class="tb-card-icon">{ }</div><div class="tb-card-title">JSON 格式化</div></div>
-          <div class="tb-card-desc">JSON 美化、压缩、校验，支持语法高亮预览</div>
+        <article class="tb-card" onclick="tbShowTool('encode')" itemscope itemtype="https://schema.org/WebApplication" role="button" tabindex="0" onkeydown="if(event.key==='Enter')tbShowTool('encode')">
+          <meta itemprop="applicationCategory" content="DeveloperApplication">
+          <div class="tb-card-header"><div class="tb-card-icon" aria-hidden="true">{ }</div><h3 class="tb-card-title" itemprop="name">JSON 格式化</h3></div>
+          <div class="tb-card-desc" itemprop="description">JSON 美化、压缩、校验，支持语法高亮预览</div>
           <div class="tb-card-tags"><span class="tb-card-tag">format</span><span class="tb-card-tag">validate</span><span class="tb-card-tag">minify</span></div>
-        </div>
-        <div class="tb-card" onclick="tbShowTool('encode')">
-          <div class="tb-card-header"><div class="tb-card-icon">🔗</div><div class="tb-card-title">URL 编解码</div></div>
-          <div class="tb-card-desc">URL Encode/Decode，快速转义特殊字符</div>
+        </article>
+        <article class="tb-card" onclick="tbShowTool('encode')" itemscope itemtype="https://schema.org/WebApplication" role="button" tabindex="0" onkeydown="if(event.key==='Enter')tbShowTool('encode')">
+          <meta itemprop="applicationCategory" content="DeveloperApplication">
+          <div class="tb-card-header"><div class="tb-card-icon" aria-hidden="true">🔗</div><h3 class="tb-card-title" itemprop="name">URL 编解码</h3></div>
+          <div class="tb-card-desc" itemprop="description">URL Encode/Decode，快速转义特殊字符</div>
           <div class="tb-card-tags"><span class="tb-card-tag">encodeURIComponent</span><span class="tb-card-tag">decodeURI</span></div>
-        </div>
-        <div class="tb-card" onclick="tbShowTool('encode')">
-          <div class="tb-card-header"><div class="tb-card-icon">📦</div><div class="tb-card-title">Base64 编解码</div></div>
-          <div class="tb-card-desc">文本与 Base64 互转，支持中文自动编码</div>
+        </article>
+        <article class="tb-card" onclick="tbShowTool('encode')" itemscope itemtype="https://schema.org/WebApplication" role="button" tabindex="0" onkeydown="if(event.key==='Enter')tbShowTool('encode')">
+          <meta itemprop="applicationCategory" content="DeveloperApplication">
+          <div class="tb-card-header"><div class="tb-card-icon" aria-hidden="true">📦</div><h3 class="tb-card-title" itemprop="name">Base64 编解码</h3></div>
+          <div class="tb-card-desc" itemprop="description">文本与 Base64 互转，支持中文自动编码</div>
           <div class="tb-card-tags"><span class="tb-card-tag">btoa</span><span class="tb-card-tag">atob</span><span class="tb-card-tag">UTF-8</span></div>
-        </div>
-        <div class="tb-card" onclick="tbShowTool('encode')">
-          <div class="tb-card-header"><div class="tb-card-icon">🔑</div><div class="tb-card-title">MD5 加密</div></div>
-          <div class="tb-card-desc">计算字符串 MD5 哈希值，支持大小写切换</div>
+        </article>
+        <article class="tb-card" onclick="tbShowTool('encode')" itemscope itemtype="https://schema.org/WebApplication" role="button" tabindex="0" onkeydown="if(event.key==='Enter')tbShowTool('encode')">
+          <meta itemprop="applicationCategory" content="DeveloperApplication">
+          <div class="tb-card-header"><div class="tb-card-icon" aria-hidden="true">🔑</div><h3 class="tb-card-title" itemprop="name">MD5 加密</h3></div>
+          <div class="tb-card-desc" itemprop="description">计算字符串 MD5 哈希值，支持大小写切换</div>
           <div class="tb-card-tags"><span class="tb-card-tag">hash</span><span class="tb-card-tag">digest</span></div>
-        </div>
+        </article>
       </div>
     </div>
 
     <!-- 转换工具 -->
-    <div class="tb-section">
-      <div class="tb-section-title"><span class="tb-sec-icon">🔄</span> 转换工具</div>
+    <div class="tb-section" aria-labelledby="sec-convert">
+      <h2 class="tb-section-title" id="sec-convert"><span class="tb-sec-icon">🔄</span> 转换工具</h2>
       <div class="tb-grid tb-cat-convert">
-        <div class="tb-card" onclick="tbShowTool('convert')">
-          <div class="tb-card-header"><div class="tb-card-icon">🕐</div><div class="tb-card-title">时间戳转换</div></div>
-          <div class="tb-card-desc">Unix 时间戳 ↔ 日期时间 双向转换</div>
+        <article class="tb-card" onclick="tbShowTool('convert')" itemscope itemtype="https://schema.org/WebApplication" role="button" tabindex="0">
+          <meta itemprop="applicationCategory" content="DeveloperApplication">
+          <div class="tb-card-header"><div class="tb-card-icon" aria-hidden="true">🕐</div><h3 class="tb-card-title" itemprop="name">时间戳转换</h3></div>
+          <div class="tb-card-desc" itemprop="description">Unix 时间戳 ↔ 日期时间 双向转换</div>
           <div class="tb-card-tags"><span class="tb-card-tag">timestamp</span><span class="tb-card-tag">ISO 8601</span></div>
-        </div>
-        <div class="tb-card" onclick="tbShowTool('convert')">
-          <div class="tb-card-header"><div class="tb-card-icon">🔢</div><div class="tb-card-title">进制转换</div></div>
-          <div class="tb-card-desc">二进制/八进制/十进制/十六进制互转</div>
+        </article>
+        <article class="tb-card" onclick="tbShowTool('convert')" itemscope itemtype="https://schema.org/WebApplication" role="button" tabindex="0">
+          <meta itemprop="applicationCategory" content="DeveloperApplication">
+          <div class="tb-card-header"><div class="tb-card-icon" aria-hidden="true">🔢</div><h3 class="tb-card-title" itemprop="name">进制转换</h3></div>
+          <div class="tb-card-desc" itemprop="description">二进制/八进制/十进制/十六进制互转</div>
           <div class="tb-card-tags"><span class="tb-card-tag">bin</span><span class="tb-card-tag">oct</span><span class="tb-card-tag">hex</span></div>
-        </div>
+        </article>
       </div>
     </div>
 
     <!-- 生成工具 -->
-    <div class="tb-section">
-      <div class="tb-section-title"><span class="tb-sec-icon">🎲</span> 生成工具</div>
+    <div class="tb-section" aria-labelledby="sec-generate">
+      <h2 class="tb-section-title" id="sec-generate"><span class="tb-sec-icon">🎲</span> 生成工具</h2>
       <div class="tb-grid tb-cat-generate">
-        <div class="tb-card" onclick="tbShowTool('generate')">
-          <div class="tb-card-header"><div class="tb-card-icon">🔐</div><div class="tb-card-title">随机密码</div></div>
-          <div class="tb-card-desc">自定义长度和字符类型，带强度指示器</div>
+        <article class="tb-card" onclick="tbShowTool('generate')" itemscope itemtype="https://schema.org/WebApplication" role="button" tabindex="0">
+          <meta itemprop="applicationCategory" content="DeveloperApplication">
+          <div class="tb-card-header"><div class="tb-card-icon" aria-hidden="true">🔐</div><h3 class="tb-card-title" itemprop="name">随机密码</h3></div>
+          <div class="tb-card-desc" itemprop="description">自定义长度和字符类型，带强度指示器</div>
           <div class="tb-card-tags"><span class="tb-card-tag">secure</span><span class="tb-card-tag">customizable</span></div>
-        </div>
-        <div class="tb-card" onclick="tbShowTool('generate')">
-          <div class="tb-card-header"><div class="tb-card-icon">🆔</div><div class="tb-card-title">UUID 生成</div></div>
-          <div class="tb-card-desc">批量生成 UUID v4，支持格式自定义</div>
+        </article>
+        <article class="tb-card" onclick="tbShowTool('generate')" itemscope itemtype="https://schema.org/WebApplication" role="button" tabindex="0">
+          <meta itemprop="applicationCategory" content="DeveloperApplication">
+          <div class="tb-card-header"><div class="tb-card-icon" aria-hidden="true">🆔</div><h3 class="tb-card-title" itemprop="name">UUID 生成</h3></div>
+          <div class="tb-card-desc" itemprop="description">批量生成 UUID v4，支持格式自定义</div>
           <div class="tb-card-tags"><span class="tb-card-tag">v4</span><span class="tb-card-tag">batch</span></div>
-        </div>
+        </article>
       </div>
     </div>
 
     <!-- 文本工具 -->
-    <div class="tb-section">
-      <div class="tb-section-title"><span class="tb-sec-icon">📝</span> 文本工具</div>
+    <div class="tb-section" aria-labelledby="sec-text">
+      <h2 class="tb-section-title" id="sec-text"><span class="tb-sec-icon">📝</span> 文本工具</h2>
       <div class="tb-grid tb-cat-text">
-        <div class="tb-card" onclick="tbShowTool('text')">
-          <div class="tb-card-header"><div class="tb-card-icon">🔍</div><div class="tb-card-title">正则表达式测试</div></div>
-          <div class="tb-card-desc">实时测试正则匹配，支持 g/i/m 标志位</div>
+        <article class="tb-card" onclick="tbShowTool('text')" itemscope itemtype="https://schema.org/WebApplication" role="button" tabindex="0">
+          <meta itemprop="applicationCategory" content="DeveloperApplication">
+          <div class="tb-card-header"><div class="tb-card-icon" aria-hidden="true">🔍</div><h3 class="tb-card-title" itemprop="name">正则表达式测试</h3></div>
+          <div class="tb-card-desc" itemprop="description">实时测试正则匹配，支持 g/i/m 标志位</div>
           <div class="tb-card-tags"><span class="tb-card-tag">regex</span><span class="tb-card-tag">test</span><span class="tb-card-tag">match</span></div>
-        </div>
-        <div class="tb-card" onclick="tbShowTool('text')">
-          <div class="tb-card-header"><div class="tb-card-icon">📊</div><div class="tb-card-title">文本对比 Diff</div></div>
-          <div class="tb-card-desc">两段文本逐行对比，高亮差异部分</div>
+        </article>
+        <article class="tb-card" onclick="tbShowTool('text')" itemscope itemtype="https://schema.org/WebApplication" role="button" tabindex="0">
+          <meta itemprop="applicationCategory" content="DeveloperApplication">
+          <div class="tb-card-header"><div class="tb-card-icon" aria-hidden="true">📊</div><h3 class="tb-card-title" itemprop="name">文本对比 Diff</h3></div>
+          <div class="tb-card-desc" itemprop="description">两段文本逐行对比，高亮差异部分</div>
           <div class="tb-card-tags"><span class="tb-card-tag">diff</span><span class="tb-card-tag">compare</span></div>
-        </div>
-        <div class="tb-card" onclick="tbShowTool('text')">
-          <div class="tb-card-header"><div class="tb-card-icon">📏</div><div class="tb-card-title">字数统计</div></div>
-          <div class="tb-card-desc">字符数、单词数、行数、中文字数实时统计</div>
+        </article>
+        <article class="tb-card" onclick="tbShowTool('text')" itemscope itemtype="https://schema.org/WebApplication" role="button" tabindex="0">
+          <meta itemprop="applicationCategory" content="DeveloperApplication">
+          <div class="tb-card-header"><div class="tb-card-icon" aria-hidden="true">📏</div><h3 class="tb-card-title" itemprop="name">字数统计</h3></div>
+          <div class="tb-card-desc" itemprop="description">字符数、单词数、行数、中文字数实时统计</div>
           <div class="tb-card-tags"><span class="tb-card-tag">counter</span><span class="tb-card-tag">chinese</span></div>
-        </div>
+        </article>
       </div>
     </div>
 
     <!-- 计算工具 -->
-    <div class="tb-section">
-      <div class="tb-section-title"><span class="tb-sec-icon">🧮</span> 计算工具</div>
+    <div class="tb-section" aria-labelledby="sec-calc">
+      <h2 class="tb-section-title" id="sec-calc"><span class="tb-sec-icon">🧮</span> 计算工具</h2>
       <div class="tb-grid tb-cat-calc">
-        <div class="tb-card" onclick="tbShowTool('calculate')">
-          <div class="tb-card-header"><div class="tb-card-icon">📏</div><div class="tb-card-title">单位换算</div></div>
-          <div class="tb-card-desc">长度、重量、温度等常用单位互相换算</div>
+        <article class="tb-card" onclick="tbShowTool('calculate')" itemscope itemtype="https://schema.org/WebApplication" role="button" tabindex="0">
+          <meta itemprop="applicationCategory" content="DeveloperApplication">
+          <div class="tb-card-header"><div class="tb-card-icon" aria-hidden="true">📏</div><h3 class="tb-card-title" itemprop="name">单位换算</h3></div>
+          <div class="tb-card-desc" itemprop="description">长度、重量、温度等常用单位互相换算</div>
           <div class="tb-card-tags"><span class="tb-card-tag">length</span><span class="tb-card-tag">weight</span><span class="tb-card-tag">temp</span></div>
-        </div>
-        <div class="tb-card" onclick="tbShowTool('calculate')">
-          <div class="tb-card-header"><div class="tb-card-icon">🖥️</div><div class="tb-card-title">Unix 权限计算</div></div>
-          <div class="tb-card-desc">数字权限 ↔ 符号权限 ↔ chmod 命令</div>
+        </article>
+        <article class="tb-card" onclick="tbShowTool('calculate')" itemscope itemtype="https://schema.org/WebApplication" role="button" tabindex="0">
+          <meta itemprop="applicationCategory" content="DeveloperApplication">
+          <div class="tb-card-header"><div class="tb-card-icon" aria-hidden="true">🖥️</div><h3 class="tb-card-title" itemprop="name">Unix 权限计算</h3></div>
+          <div class="tb-card-desc" itemprop="description">数字权限 ↔ 符号权限 ↔ chmod 命令</div>
           <div class="tb-card-tags"><span class="tb-card-tag">chmod</span><span class="tb-card-tag">rwx</span><span class="tb-card-tag">777</span></div>
-        </div>
+        </article>
       </div>
     </div>
 
