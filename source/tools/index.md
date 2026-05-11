@@ -70,7 +70,6 @@ seo:
 
 {% raw %}
 
-{% raw %}
 <style>
 /* ====== Butterfly 适配工具箱样式 ====== */
 .tb-container { max-width: 900px; margin: 0 auto; }
